@@ -23,18 +23,45 @@
 </head>
 
 <body>
+    <!-- nav section -->
     <header class="bg-[#FFFBF0] py-20 px-4 md:px-32">
-        <!-- nav section -->
-        <nav>
-            <div class="flex justify-between mb-4">
-                <div class="w-56 h-8"><img src="icons/logo.png" alt=""></div>
-                <div class="flex justify-around text-xl font-medium gap-14 font-roboto">
-                    <a class=" hover:bg-[#efd99d]  rounded-sm" href="">Home</a><a class="hover:bg-[#efd99d] rounded-sm"
-                        href="">Product</a><a class="  hover:bg-[#efd99d] rounded-sm" href="">About Us</a><a
-                        class="  hover:bg-[#efd99d] rounded-sm" href="">Contact Us</a>
-                </div>
+
+        <nav class="flex justify-between items-center px-6 py-3">
+            <div class="flex items-center gap-2">
+                <img src="icons/logo.png" alt="Logo" class="h-12 w-auto object-contain">
+                <!-- <h1 class="text-2xl font-bold text-[#363958]">
+                    Penguin <span class="text-[#FABE4C]">Fashion</span>
+                </h1> -->
             </div>
+
+            <ul class="flex gap-8 text-lg font-medium">
+                <li>
+                    <a href="#home"
+                        class="relative text-[#363958] transition duration-300 hover:text-[#FABE4C] after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#FABE4C] after:transition-all after:duration-300 hover:after:w-full">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#product"
+                        class="relative text-[#363958] transition duration-300 hover:text-[#FABE4C] after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#FABE4C] after:transition-all after:duration-300 hover:after:w-full">
+                        Product
+                    </a>
+                </li>
+                <li>
+                    <a href="#about"
+                        class="relative text-[#363958] transition duration-300 hover:text-[#FABE4C] after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#FABE4C] after:transition-all after:duration-300 hover:after:w-full">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact"
+                        class="relative text-[#363958] transition duration-300 hover:text-[#FABE4C] after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#FABE4C] after:transition-all after:duration-300 hover:after:w-full">
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </nav>
+
         <!-- banner section -->
         <div class="flex flex-col md:flex-row justify-between items-center ">
             <div class="space-y-3">
@@ -191,59 +218,94 @@
                 </div>
             </div>
         </section>
+
+
         <!-- last section -->
-        <section>
-            <div class="flex gap-96">
-                <div>
+        <section class="py-16">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Left side cards -->
+                <div class="space-y-6 w-full md:w-1/2">
                     <!-- card 1 -->
-                    <div class="flex space-y-5 shadow-lg w-full h-36">
-                        <div>
-                            <img class="" src="icons/house.png" alt="">
-                        </div>
+                    <div class="flex items-center gap-4 shadow-lg p-4 rounded-lg bg-white">
+                        <img src="icons/house.png" alt="" class="w-12 h-12">
                         <div class="font-roboto">
                             <h3 class="text-2xl font-bold text-[#363958]">Find the Perfect Fit</h3>
-                            <p class="text-base font-normal text-[#3E3E3E]">
-                                Everybody is different, which is why we
-                                offer styles for every body.
+                            <p class="text-base text-[#3E3E3E]">
+                                Everybody is different, which is why we offer styles for every body.
                             </p>
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="flex space-y-5 shadow-lg w-full h-36">
-                        <div>
-                            <img src="icons/box.png" alt="">
-                        </div>
+                    <div class="flex items-center gap-4 shadow-lg p-4 rounded-lg bg-white">
+                        <img src="icons/box.png" alt="" class="w-12 h-12">
                         <div class="font-roboto">
                             <h3 class="text-2xl font-bold text-[#363958]">Free Exchanges</h3>
-                            <p class="text-base font-normal text-[#3E3E3E]">
-                                One of the many reasons you can shop
-                                with peace of mind.
+                            <p class="text-base text-[#3E3E3E]">
+                                One of the many reasons you can shop with peace of mind.
                             </p>
                         </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="flex space-y-5 shadow-lg w-full h-36">
-                        <div>
-                            <img src="icons/question.png" alt="">
-                        </div>
+                    <div class="flex items-center gap-4 shadow-lg p-4 rounded-lg bg-white">
+                        <img src="icons/question.png" alt="" class="w-12 h-12">
                         <div class="font-roboto">
                             <h3 class="text-2xl font-bold text-[#363958]">Contact Our Seller</h3>
-                            <p class="text-base font-normal text-[#3E3E3E]">
-                                They are here to help you. That's quite
-                                literally what we pay them for.
+                            <p class="text-base text-[#3E3E3E]">
+                                They are here to help you. That's quite literally what we pay them for.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img class="" src="images/shopping.png" alt="">
+                <!-- Right side image -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="images/shopping.png" alt="">
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="text-center py-6 bg-[#FFFBF0] mt-12">
+        <p class="font-roboto">© 2025 Penguin Fashion. All rights reserved.</p>
+        <p class="font-roboto">🛒 Cart Items: <span id="cart-count">0</span></p>
     </footer>
+
+    <script>
+        //Add to Cart Counter
+        const cartCount = document.getElementById("cart-count");
+        const buyButtons = document.querySelectorAll("button");
+
+        let count = 0;
+        buyButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                if (btn.textContent.includes("Buy Now")) {
+                    count++;
+                    cartCount.textContent = count;
+                    btn.classList.add("scale-95");
+                    setTimeout(() => btn.classList.remove("scale-95"), 150);
+                }
+            });
+        });
+
+        //Sticky Navbar Background Change
+        const nav = document.querySelector("nav");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                nav.classList.add("bg-white", "shadow-md");
+            } else {
+                nav.classList.remove("bg-white", "shadow-md");
+            }
+        });
+
+        //Card Hover Animation
+        const cards = document.querySelectorAll(".drop-shadow-lg, .shadow-lg");
+        cards.forEach(card => {
+            card.addEventListener("mouseenter", () => {
+                card.classList.add("scale-105", "transition", "duration-300");
+            });
+            card.addEventListener("mouseleave", () => {
+                card.classList.remove("scale-105");
+            });
+        });
+    </script>
 </body>
 
 </html>
